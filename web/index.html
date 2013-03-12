@@ -3,11 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="chrome=1"/>
-<title>home</title>
-<script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+<title>サンプルチャート</title>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script src="../js/bootstrap.min.js"></script>
-
 <script src="https://www.google.com/jsapi"></script>
 <script>
 	google.load('visualization', '1.1', {packages: ['corechart', 'controls']});
@@ -106,34 +103,27 @@
 </head>
 
 <body>
-    <script type="text/javascript" 
-     src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
+<!--[if IE]>
+	<script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
+	<style>
+	.chromeFrameInstallDefaultStyle {
+		border: 5px solid blue;
+	}
+	</style>
 
-    <style>
-     .chromeFrameInstallDefaultStyle {
-       width: 100%; /* default is 800px */
-       border: 5px solid blue;
-     }
-    </style>
-
-    <div id="prompt">
-     <!-- if IE without GCF, prompt goes here -->
-    </div>
+	<div id="prompt"></div>
  
-    <script>
-     // The conditional ensures that this code will only execute in IE,
-     // Therefore we can use the IE-specific attachEvent without worry
-     window.attachEvent("onload", function() {
-       CFInstall.check({
-         mode: "inline", // the default
-         node: "prompt"
-       });
-     });
-    </script>
+	<script>
+	window.attachEvent("onload", function() {
+		CFInstall.check({
+			mode: "inline", // the default
+			node: "prompt"
+		});
+	});
+	</script>
+<![endif]-->
 <div id="contents-s">
-<a name="pagetop"></a>
 <div id="swcont">
-<!-- InstanceBeginEditable name="swCont" -->
 <div id="detail">
 
 ■サンプルチャート
@@ -144,16 +134,8 @@
 </div>
 
 </div>
-<!-- InstanceEndEditable -->
 </div>
-<!-- フッタ -->
-<div id="foot-s">
-<table width="850" border="0" cellpadding="0" cellspacing="0" align="center">
-<tr>
-</tr>
-</table>
 </div>
 
-</div>
 </body>
 <!-- InstanceEnd --></html>
