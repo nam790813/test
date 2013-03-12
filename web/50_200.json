@@ -1,13 +1,13 @@
 {
 	"cols" : [
-		{"id": "", "label": "日付", "type": "date"},
-		{"id": "", "label": "移動平均(5日)", "type": "number"},
-		{"id": "", "label": "移動平均(25日)", "type": "number"},
-		{"id": "", "label": "出来高", "type": "number"},
-		{"id": "", "label": "4本値", "type": "number"},
-		{"id": "", "label": "4本値", "type": "number"},
-		{"id": "", "label": "4本値", "type": "number"},
-		{"id": "", "label": "4本値", "type": "number"}
+		{"id": "", "label": "Date", "type": "date"},
+		{"id": "", "label": "Ave(05day)", "type": "number"},
+		{"id": "", "label": "Ave(25day)", "type": "number"},
+		{"id": "", "label": "DayVolume", "type": "number"},
+		{"id": "", "label": "OHLC(4val)", "type": "number", "role":"tooltip"},
+		{"id": "", "label": "OHLC(4val)", "type": "number", "role":"tooltip"},
+		{"id": "", "label": "OHLC(4val)", "type": "number", "role":"tooltip"},
+		{"id": "", "label": "OHLC(4val)", "type": "number", "role":"tooltip"}
 	],
 	"rows" : [
 {"c": [{"v":"Date(2012,04,18)"},{"v":null},{"v":null},{"v":170},{"v":16590},{"v":16590},{"v":16590},{"v":16590}]}
