@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1"/>
+<title>サンプルチャート</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="https://www.google.com/jsapi"></script>
+<script>
+	google.load('visualization', '1.1', {packages: ['corechart', 'controls']});
+</script>
+
+<script>
+	function drawVisualization() {
+		var jsonData = $.ajax({
+			url: "50_201208.json",
+			beforeSend: function(listData){
+				listData.overrideMimeType("text/html;charset=Shift_JIS");
+			},
+			dataType:"json",
+			async: false
+			}).responseText;
+		var data = new google.visualization.DataTable(jsonData);
+		
+		var dashboard = new google.visualization.Dashboard(document.getElementById('dashboard'));
+		var control = new google.visualization.ControlWrapper({
+			controlType: 'ChartRangeFilter',
+			containerId: 'control',
+			options: {
+				filterColumnIndex: 0,
+				ui: {
+					chartType: 'LineChart',
+					chartOptions: {
+						width: 1280, height: 160,
+						chartArea: {width: 1120, height: 160},
+						hAxis: {textPosition: 'in'},
+						vAxis: {title: 'Close Price', textPosition: 'in', gridlines: {color: 'none'}
+					}
+					},
+					chartView: {columns: [ 0, 6 ]},
+					
+					// 1 day in milliseconds = 24 * 60 * 60 * 1000 = 86,400,000
+					minRangeSize: 86400000
+				}
+			},
+			state: {range: {start: new Date(0), end: new Date()}}
+		});
+		
+		var chart = new google.visualization.ChartWrapper({
+			chartType: 'ComboChart',
+			containerId: 'chart',
+			options: {
+				width: 1280, height: 560, fontSize:10, lineWidth: 2, 
+				backgroundColor:{fill: 'lightcyan', stroke: 'skyblue', strokeWidth: 5},
+				
+				chartArea: {
+					width: 1120, height: 440, 
+					backgroundColor:{fill: 'white', stroke: 'skyblue', strokeWidth: 2}
+				},
+				vAxes: {
+					0:{title: 'Price(yen)', gridlines: {count: 6}}, 
+					1:{title: 'Volume', gridlines: {count: 11}, maxValue: 10000}
+				},
+				hAxis: {showTextEvery: 5, slantedText: 'true', slantedTextAngle: 45},
+				
+				seriesType: 'candlesticks', colors:['black'],
+				candlestick: {
+					hollowIsRising: true, 
+					fallingColor: {fill: 'blue', stroke: 'blue'}, 
+					risingColor: {stroke: 'red', strokeWidth: 0.5}
+				},
+				series: {
+					0: {type: 'line', color: 'brown'}, 
+					1: {type: 'line', color: 'seagreen'},
+					2: {type: 'bars', color: 'gold', targetAxisIndex: 1}
+				}, 
+				focusTarget: 'category'
+			},
+			view: {
+				columns: [ {
+					calc: function(dataTable, rowIndex) {
+						return dataTable.getFormattedValue(rowIndex, 0);
+					},
+					type: 'string'
+				}, 1, 2, 3, 4 , 5, 6, 7]
+			}
+		});
+		
+		var priceFormat = new google.visualization.NumberFormat({pattern: '#,### yen'});
+		priceFormat.format(data, 1);
+		priceFormat.format(data, 2);
+		
+		new google.visualization.NumberFormat({pattern: 'Low #,###'}).format(data, 4);
+		new google.visualization.NumberFormat({pattern: 'Open #,###'}).format(data, 5);
+		new google.visualization.NumberFormat({pattern: 'Close #,###'}).format(data, 6);
+		new google.visualization.NumberFormat({pattern: 'High #,###'}).format(data, 7);
+		
+		dashboard.bind(control, chart);
+		dashboard.draw(data);
+	}
+	google.setOnLoadCallback(drawVisualization);
+</script>
+</head>
+
+<body>
+<!--[if IE]>
+	<script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
+	<style>
+	.chromeFrameInstallDefaultStyle {
+		border: 5px solid blue;
+	}
+	</style>
+
+	<div id="prompt"></div>
+ 
+	<script>
+	window.attachEvent("onload", function() {
+		CFInstall.check({
+			mode: "inline", // the default
+			node: "prompt"
+		});
+	});
+	</script>
+<![endif]-->
+<div id="contents-s">
+<div id="swcont">
+<div id="detail">
+
+■サンプルチャート
+<!-- div id="chart_div"></div -->
+<div id="dashboard">
+	<div id="chart"></div>
+	<div id="control"></div>
+</div>
+
+</div>
+</div>
+</div>
+
+</body>
+<!-- InstanceEnd --></html>
