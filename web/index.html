@@ -1,0 +1,150 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html><!-- InstanceBegin template="/Templates/window.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>相場情報：チャート　::　大阪堂島商品取引所</title>
+<!-- InstanceEndEditable -->
+
+<!-- InstanceBeginEditable name="head" -->
+<style type="text/css">
+
+</style>
+<!-- InstanceEndEditable -->
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+	google.load('visualization', '1.1', {packages: ['corechart', 'controls']});
+</script>
+<!-- script type="text/javascript" src="../js/common.js"></script -->
+<link href="default.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript">
+	function drawVisualization() {
+		var jsonData = $.ajax({
+			url: "50_200.json",
+			beforeSend: function(listData){
+				listData.overrideMimeType("text/html;charset=Shift_JIS");
+			},
+			dataType:"json",
+			async: false
+			}).responseText;
+		var data = new google.visualization.DataTable(jsonData);
+		
+		var dashboard = new google.visualization.Dashboard(document.getElementById('dashboard'));
+		var control = new google.visualization.ControlWrapper({
+			controlType: 'ChartRangeFilter',
+			containerId: 'control',
+			options: {
+				filterColumnIndex: 0,
+				ui: {
+					chartType: 'LineChart',
+					chartOptions: {
+						width: 1280, height: 160,
+						chartArea: {width: 1120, height: 160},
+						hAxis: {textPosition: 'in'},
+						vAxis: {title: 'Close Price', textPosition: 'in', gridlines: {color: 'none'}
+					}
+					},
+					chartView: {columns: [ 0, 6 ]},
+					
+					// 1 day in milliseconds = 24 * 60 * 60 * 1000 = 86,400,000
+					minRangeSize: 86400000
+				}
+			},
+			state: {range: {start: new Date(0), end: new Date()}}
+		});
+		
+		var chart = new google.visualization.ChartWrapper({
+			chartType: 'ComboChart',
+			containerId: 'chart',
+			options: {
+				width: 1280, height: 560, fontSize:10, lineWidth: 2, 
+				backgroundColor:{fill: 'lightcyan', stroke: 'skyblue', strokeWidth: 5},
+				
+				chartArea: {
+					width: 1120, height: 440, 
+					backgroundColor:{fill: 'white', stroke: 'skyblue', strokeWidth: 2}
+				},
+				vAxes: {
+					0:{title: 'Price(yen)', gridlines: {count: 6}}, 
+					1:{title: 'Volume', gridlines: {count: 11}, maxValue: 10000}
+				},
+				hAxis: {showTextEvery: 5, slantedText: 'true', slantedTextAngle: 45},
+				
+				seriesType: 'candlesticks', colors:['black'],
+				candlestick: {
+					hollowIsRising: true, 
+					fallingColor: {fill: 'blue', stroke: 'blue'}, 
+					risingColor: {stroke: 'red', strokeWidth: 0.5}
+				},
+				series: {
+					0: {type: 'line', color: 'brown'}, 
+					1: {type: 'line', color: 'seagreen'},
+					2: {type: 'bars', color: 'gold', targetAxisIndex: 1}
+				}, 
+				focusTarget: 'category'
+			},
+			view: {
+				columns: [ {
+					calc: function(dataTable, rowIndex) {
+						return dataTable.getFormattedValue(rowIndex, 0);
+					},
+					type: 'string'
+				}, 1, 2, 3, 4 , 5, 6, 7]
+			}
+		});
+		
+		var priceFormat = new google.visualization.NumberFormat({pattern: '#,### yen'});
+		priceFormat.format(data, 1);
+		priceFormat.format(data, 2);
+		
+		new google.visualization.NumberFormat({pattern: 'Low #,###'}).format(data, 4);
+		new google.visualization.NumberFormat({pattern: 'Open #,###'}).format(data, 5);
+		new google.visualization.NumberFormat({pattern: 'Close #,###'}).format(data, 6);
+		new google.visualization.NumberFormat({pattern: 'High #,###'}).format(data, 7);
+		
+		dashboard.bind(control, chart);
+		dashboard.draw(data);
+	}
+	google.setOnLoadCallback(drawVisualization);
+</script>
+</head>
+
+<body>
+<div id="contents-s">
+<a name="pagetop"></a>
+<!-- ヘッダ -->
+<div id="head-s"><img src="logo.gif" alt="大阪堂島商品取引所" width="216" height="40" border="0"></div>
+
+<!-- メインコンテンツ -->
+<div id="swcont">
+<!-- InstanceBeginEditable name="swCont" -->
+<h1><img src="ttl-chartdetail.gif" alt="相場情報：チャート"></h1>
+<div id="detail">
+
+■大阪コメ　先限日足チャート（直近200日分）
+<!-- div id="chart_div"></div -->
+<div id="dashboard">
+	<div id="chart"></div>
+	<div id="control"></div>
+</div>
+
+</div>
+<!-- InstanceEndEditable -->
+</div>
+<!-- フッタ -->
+<div id="foot-s">
+<table width="850" border="0" cellpadding="0" cellspacing="0" align="center">
+<tr>
+<td><img src="copyright.gif"></td>
+<td align="right" nowrap><a href="#" onClick="window.close(); return false;"><img src="close_win.gif" alt="Close" hspace="10" border="0"></a><a href="#pagetop"><img src="pagetop.gif" alt="Page top" border="0"></a></td>
+</tr>
+</table>
+</div>
+
+</div>
+</body>
+<!-- InstanceEnd --></html>
