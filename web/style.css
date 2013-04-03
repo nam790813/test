@@ -29,6 +29,7 @@ table {
 }
 
 #contents-s {
+	margin: 0 auto;
 	width: 1280px;
 	padding: 1px 0;
 	vertical-align: top;

@@ -57,7 +57,9 @@ function drawVisualization() {
 					vAxis: {title: '終値(close)'}
 				},
 				// 表示項目の指定(日付,終値)
-				chartView: {columns: [ 0, 7 ]}
+				chartView: {columns: [ 0, 7 ]},
+				// 1 day in milliseconds = 24 * 60 * 60 * 1000 = 86,400,000
+				minRangeSize: 864000000
 			}
 		}
 	});
