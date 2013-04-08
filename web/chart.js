@@ -56,7 +56,7 @@ function drawVisualization(fileName) {
 		containerId: 'chart',
 		options: {
 			// 背景設定
-			height: 560, lineWidth: 1,
+			height: 560,
 
 			// チャート設定
 			chartArea: {width: 1120, backgroundColor:{stroke: '#000000'}},
@@ -68,14 +68,14 @@ function drawVisualization(fileName) {
 				1:{title: '出来高(volume)', gridlines: {count: 6}, maxValue: 5000}
 			},
 			hAxis: {
-				textStyle: {fontSize: 10}, maxAlternation: 1, slantedText: 'false'
+				maxAlternation: 1, slantedText: 'false'
 			},
 
 			// ローソクグラフの設定
 			candlestick: {
 				hollowIsRising: true,
 				fallingColor: {fill: '#0000ff', stroke: '#0000ff'},
-				risingColor: {stroke: '#ff0000', strokeWidth: 0.5}
+				risingColor: {stroke: '#ff0000', strokeWidth: 0.1}
 			},
 
 			// 線グラフ(移動平均), 出来高/取組高グラフ(面グラフ)の設定
