@@ -55,14 +55,12 @@ function drawVisualization(fileName) {
 		chartType: 'ComboChart',
 		containerId: 'chart',
 		options: {
-			// 背景設定
 			height: 560,
-
-			// チャート設定
-			chartArea: {width: 1120, backgroundColor:{stroke: '#000000'}},
 			colors: ['#000000'],
-			seriesType: 'candlesticks',
 			bar: {groupWidth: '100%'},
+			
+			// チャート部設定
+			chartArea: {width: 1120, backgroundColor:{stroke: '#000000'}},
 			vAxes: {
 				0:{title: '価格(price)', gridlines: {count: 6}, slantedText: 'false'},
 				1:{title: '出来高(volume)', gridlines: {count: 6}, maxValue: 5000}
@@ -72,6 +70,7 @@ function drawVisualization(fileName) {
 			},
 
 			// ローソクグラフの設定
+			seriesType: 'candlesticks',
 			candlestick: {
 				hollowIsRising: true,
 				fallingColor: {fill: '#0000ff', stroke: '#0000ff'},
