@@ -17,7 +17,7 @@ google.setOnLoadCallback(function(){
 	$("select").change(function() {
 		drawVisualization($("select option:selected").val());
 	});
-	drawVisualization(commCode);
+	drawVisualization(commCode + "_170");
 });
 
 function drawVisualization(fileName) {
