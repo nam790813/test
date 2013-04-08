@@ -75,7 +75,7 @@ function drawVisualization(fileName) {
 			candlestick: {
 				hollowIsRising: true,
 				fallingColor: {fill: '#0000ff', stroke: '#0000ff'},
-				risingColor: {stroke: '#ff0000', strokeWidth: 0.1}
+				risingColor: {stroke: '#ff0000', strokeWidth: 1}
 			},
 
 			// 線グラフ(移動平均), 出来高/取組高グラフ(面グラフ)の設定
