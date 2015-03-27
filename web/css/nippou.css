@@ -1,0 +1,55 @@
+/* CSS nippou.css */
+
+#nippou {
+	margin:12px 0;
+}
+a[href$=".pdf"] {
+    background: url("../images/pdficon_small.png") no-repeat scroll center center transparent;
+    display: block;
+    line-height: 16px;
+    text-decoration: none;
+}
+#download-table {
+	width: 100%;
+}
+#download-table th , #download-table td {
+	border: 1px solid #809ada;
+	padding: 4px 8px;
+}
+#download-table th {
+	background-color: #5073b8;
+	color: #fff;
+	font-weight: bold;
+}
+#download-table tr.odd td {
+	background-color: #f0f3FF;
+}
+#download-table td.date {
+	width:20%;
+	text-align:center;
+}
+#download-table td.download {
+	width:10%;
+}
+
+#readerDL {
+	width: 80%;
+	clear:both;
+	margin: 12px 0;
+}
+#readerDL a {
+	float:left;
+}
+#readerDL a:hover {
+	background-color: #fff;
+}
+#readerDL img {
+	background-color: #fff;
+	margin:10px;
+}
+#readerDL a:hover img {
+	background-color: #fff;
+	filter:alpha(opacity=70);
+	-moz-opacity: 0.7;
+	opacity: 0.7;
+}

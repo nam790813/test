@@ -1,0 +1,761 @@
+/* CSS other.css */
+
+/* 共通部分 */
+#mainContent ul#otherIndex {
+	width:100%;
+	clear:both;
+	margin:12px 0;
+}
+#mainContent ul#otherIndex li {
+	min-width:40%;
+	float:left;
+	padding:2px 0 2px 12px;
+}
+#mainContent ul#otherIndex li#subtitle {
+	width:100%;
+	min-width:100%;
+	clear:both;
+	padding: 0 0 2px;
+}
+#mainContent ul#otherIndex li a {
+	font-weight:bold;
+	padding: 2px 8px;
+}
+#mainContent ul#otherIndex li a:hover {
+	background-color:#E6EBFF;
+}
+
+#mainContent table.linkIndex {
+	width:100%;
+	margin:0 0 12px 0;
+}
+#mainContent table.linkIndex th {
+	text-align:left;
+	padding: 8px 0 8px 12px;
+	border-bottom:1px solid #1e2b62;
+	font-size:14px;
+	color:#5073b8;
+	font-weight:bold;
+}
+#mainContent table.linkIndex td {
+	padding: 8px 4px 0;
+	font-weight:bold;
+	width:240px;
+}
+#mainContent table.linkIndex td a {
+	padding:4px 6px;
+	width:240px;
+	display:block;
+	border:1px solid #5073b8;
+	background-color:#E6EBFF;
+	font-size:12px;
+	font-weight:normal;
+	letter-spacing:0.1em;
+}
+#mainContent table.linkIndex td a#selected {
+	border:1px solid #1e2b62;
+	background-color:#5073b8;
+	color:#fff;
+}
+#mainContent table.linkIndex td a#selected span {
+	color:#fff;
+}
+#mainContent table.linkIndex td a:hover {
+	background-color:#f0f3ff;
+}
+#mainContent table.linkIndex td span {
+	color:#ff6000;
+	font-weight:normal;
+	margin:0 3px 0 0;
+}
+
+/* ページ「堂島先物塾」 */
+#mainContent img#title {
+	clear:both;
+	margin-bottom:24px;
+}
+
+#mainContent.juku table#juku {
+	width: 90%;
+	clear:both;
+	margin:12px 0 12px 24px;
+}
+#mainContent.juku table#juku th {
+	text-align: left;
+	background-color: #E6EBFF;
+	padding:6px 12px;
+	border: 1px solid #5073b8;
+}
+#mainContent.juku table#juku td {
+	padding:6px 12px;
+	border: 1px solid #5073b8;
+}
+
+#mainContent.juku ul.info {
+	margin: 12px 0 12px 24px;
+}
+
+
+
+
+#mainContent.juku table#juku2 {
+	width: 90%;
+	clear:both;
+	margin:12px 0 12px 24px;
+}
+
+
+#mainContent.juku table#juku2 th {
+	text-align: left;
+	padding:6px 12px;
+	border: 1px solid #5073b8;
+}
+#mainContent.juku table#juku2 td {
+	padding:6px 12px;
+	border: 1px solid #5073b8;
+}
+
+
+#mainContent.juku table#juku3 {
+	width: 90%;
+	clear:both;
+	margin:12px 0 12px 24px;
+}
+#mainContent.juku table#juku3 th {
+	text-align: center;
+	background-color: #E6EBFF;
+	padding:6px 12px;
+	border: 1px solid #5073b8;
+}
+#mainContent.juku table#juku3 td {
+	padding:6px 12px;
+	border: 1px solid #5073b8;
+}
+
+
+
+
+
+
+
+
+
+
+/* ページ「農業気象速報」「コメのレポート」 */
+#mainContent.weather table.link ,
+#mainContent.komeReport table.link {
+	margin:12px 0;
+}
+#mainContent.weather table.link th ,
+#mainContent.komeReport table.link th {
+	background-color: #E6EBFF;
+	color: #1e2b62;
+	text-align:left;
+	padding: 4px 12px;
+}
+#mainContent.weather table.link td ,
+#mainContent.komeReport table.link  td {
+	line-height: 16px;
+	padding: 5px 8px;
+}
+#mainContent.weather table.link td.idt {
+	padding-left:24px;
+}
+
+#mainContent.weather div.caution {
+	margin: 12px;
+	border: 1px dotted #5073b8;
+	padding: 8px;
+}
+
+#mainContent.komeReport div.indexPart h2 {
+	font-size:16px;
+}
+#mainContent.komeReport div.indexPart h2 span{
+	font-size:13px;
+	padding-left:6px;
+}
+#mainContent.komeReport table.link {
+	margin-left: 12px;
+	width: 100%;
+}
+
+/* ページ「コメ先物 過去レポート 」 */
+#mainContent.komeReport.Child ul.link {
+	width:385px;
+	float:left;
+}
+#mainContent.komeReport.Child ul.link li {
+	padding:3px 6px;
+}
+#mainContent.komeReport.Child ul.link li.index {
+	color: #ff6000;
+	padding-left:0;
+	font-size:16px;
+}
+#mainContent.komeReport.Child ul.link li.index span {
+	font-size:14px;
+	padding:1px 4px;
+}
+
+/* ページ「twitter」 */
+#mainContent.twitter table {
+	width:100%;
+	margin:12px 24px 24px;
+}
+#mainContent.twitter table th {
+	background-color: #E6EBFF;
+	text-align: left;
+	padding: 6px 12px;
+	border: 1px solid #5073b8;
+	width:80px;
+}
+#mainContent.twitter table td {
+	border: 1px solid #5073b8;
+	padding: 6px 8px;
+}
+#mainContent.twitter ul#caution {
+	width: 640px;
+	margin:12px 24px;
+}
+#mainContent.twitter ul#caution li {
+	padding:4px 12px 8px;
+}
+#mainContent.twitter ul#caution li.subtitle {
+	background-color: #E6EBFF;	
+}
+#mainContent.twitter div.indexPart a.btnTwitter {
+	background-color: #fff;
+	display:table;
+}
+#mainContent.twitter div.indexPart a.btnTwitter:hover img {
+	filter:alpha(opacity=70);
+	-moz-opacity: 0.7;
+	opacity: 0.7;
+}
+#mainContent.twitter tr.firstChild td {
+	text-align:center;
+	padding:10px 0;
+}
+
+/* ページ「免責事項」 */
+#mainContent.menseki table {
+	width:80%;
+	margin:12px auto 24px;
+}
+#mainContent.menseki th {
+	padding:6px 12px;
+	border: 1px solid #5073b8;
+	background-color: #E6EBFF;
+	color:#1e2b62;
+}
+#mainContent.menseki td {
+	padding:6px 12px;
+	border: 1px solid #5073b8;
+}
+
+/* ページ「BEI」*/
+#mainContent.BEI .indexPart h2 {
+	margin: 12px 0;
+}
+#mainContent.BEI div.indexPart ul.number li {
+	list-style-type:decimal;
+}
+#mainContent.BEI div.indexPart ul.number li ul.dotted li {
+	list-style-type:disc;
+	margin-left:15px;
+}
+#mainContent.BEI div.indexPart .unit {
+	padding-left:18px;
+	width: 767px;
+}
+#mainContent.BEI div.indexPart .caution p {
+	border: 1px solid #5073b8;
+	background-color: #f0f3ff;
+	margin:12px 0 12px 12px;
+	padding:8px;
+}
+
+/* ページ「コメ先物情報室」 */
+#mainContent.komeIndex #komeNews {
+	width:760px;
+	height:120px;
+	overflow-y: scroll;
+	padding: 8px 12px;
+}
+#mainContent.komeIndex #komeNews table td {
+	padding:2px 0;
+}
+
+/* ページ「KRI」 */
+#mainContent.KRI table.normal {
+	margin:12px;
+}
+#mainContent.KRI table.normal th ,
+#mainContent.KRI table.normal td {
+	border: 1px solid #5073b8;
+	padding:3px 8px;
+}
+#mainContent.KRI table.normal th {
+	background-color: #f0f3ff;
+}
+#mainContent.KRI div.indexPart ul {
+	margin-left:48px;
+}
+#mainContent.KRI div.indexPart ul.number {
+	margin-left:12px;
+}
+#mainContent.KRI div.indexPart ul.number li ul {
+	margin-left:32px;
+}
+#mainContent.KRI table#sanchi {
+	margin-bottom:6px;
+}
+#mainContent.KRI table#sanchi td {
+	text-align:center;
+}
+#mainContent.KRI table#sanchi td.left {
+	text-align:left;
+}
+
+/* ページ「受託会員」 */
+#mainContent .jutaku {
+	width:100%;
+	margin:18px 0;
+}
+#mainContent .jutaku th {
+	text-align:left;
+	padding:4px 12px;
+    border: 1px solid #B0C6F9;
+	background-color: #5073B8;
+    color: #FFFFFF;
+	font-weight:bold;
+}
+#mainContent .jutaku td {
+    border: 1px solid #B0C6F9;
+	padding:4px 10px;
+}
+#mainContent .jutaku td.name {
+	width:246px;
+}
+#mainContent .jutaku td.blank {
+	width: 2px;
+	background-color: #B0C6F9;
+	padding:0;
+}
+#mainContent .jutaku td.last {
+	border:0;
+}
+#mainContent .jutaku td a:hover {
+	background-color: #fff;
+}
+#mainContent .jutaku td a:hover img {
+	background-color:#fff;
+	filter:alpha(opacity=70);
+	-moz-opacity: 0.7;
+	opacity: 0.7;
+}
+
+/* ページ「価格変動要因」 */
+#mainContent.priceChange table {
+	width:100%;
+	margin:12px 0;
+}
+#mainContent.priceChange table.linkIndex {
+	margin-top:0;
+}
+#mainContent.priceChange table td.date {
+	padding-left:12px;
+	width:100px;
+}
+#mainContent.priceChange table#publication {
+	width:80%;
+}
+#mainContent.priceChange table#publication td {
+	border-bottom:1px solid #B0C6F9;
+	padding:4px 8px 2px;
+}
+
+/* ページ「EFP取引‐トップ」 */
+#mainContent.EFP_top h2 {
+	font-size:15px;
+	border-bottom:1px dotted #ff6000;
+	padding-bottom:4px;
+}
+#mainContent.EFP_top ul {
+    padding: 12px 0 6px 12px;
+}
+#mainContent.EFP_top li {
+	list-style-type:disc;
+	margin-left:20px;
+}
+#mainContent.EFP_top a.sample {
+	display:block;
+	background-color:#5073b8;
+	color:#fff;
+	padding:6px 12px;
+}
+#mainContent.EFP_top a.sample:hover {
+	color:#5073b8;
+}
+#mainContent.EFP_top ul.number {
+	padding-top:6px;
+}
+#mainContent.EFP_top ul.number li {
+	list-style-type:decimal;
+	margin-left:20px;
+	margin-bottom:2px;
+}
+#mainContent.EFP_top a#mouside {
+	background-color:#fff;
+	width:319px;
+	display:block;
+	margin:12px auto;
+}
+#mainContent.EFP_top a#mouside:hover img {
+	filter:alpha(opacity=70);
+	-moz-opacity: 0.7;
+	opacity: 0.7;
+}
+#mainContent.EFP_sample img.sampleImg {
+	margin:12px;
+}
+#mainContent.EFP_sample a.backSample {
+	display:block;
+	width:180px;
+	text-align:center;
+	margin:12px auto;
+	background-color:#5073b8;
+	color:#fff;
+	padding:6px 12px;
+	font-weight:normal;
+}
+#mainContent.EFP_sample a.backSample:hover {
+	color:#1e2b62;
+}
+
+/* ページ「EFP取引の対象と申し出の流れ」 */
+#mainContent.docRequest table.item {
+	width:100%;
+	margin: 12px;
+}
+#mainContent.docRequest table.item th,
+#mainContent.docRequest table.item td {
+	border: 1px solid #5073b8;
+	padding:4px 8px;
+}
+#mainContent.docRequest table.item th {
+	background-color:#E6EBFF;
+}
+#mainContent.docRequest table.item .leftCell {
+	width:100px;
+}
+#mainContent.docRequest li{
+	list-style-type:disc;
+	margin-left:20px;
+	padding:1px 0;
+}
+#mainContent.docRequest ul.number li {
+	list-style-type:decimal;
+	margin-left:24px;
+}
+#mainContent.docRequest table.noBorder {
+	width:100%;
+	margin:12px;
+}
+#mainContent.docRequest table.noBorder th {
+	padding:4px 0;
+}
+#mainContent.docRequest table.noBorder td {
+	padding:4px;
+	border-bottom:1px dotted #5073b8;
+	vertical-align:top;
+}
+#mainContent.docRequest a#docDL {
+	display:block;
+	vertical-align:middle;
+	background-color:#fff;
+	margin-top:12px;
+}
+#mainContent.docRequest a#docDL:hover img {
+	filter:alpha(opacity=70);
+	-moz-opacity: 0.7;
+	opacity: 0.7;
+}
+
+/* ページ「コメ関係本所 刊行物」 */
+#mainContent.publication table#pamphlet {
+	width:66%;
+	margin:12px 0;
+}
+#mainContent.publication table#pamphlet th ,
+#mainContent.publication table#pamphlet td {
+	border: 1px solid #5073b8;
+}
+#mainContent.publication table#pamphlet th {
+	background-color:#F0F3FF;
+	padding:6px 12px;
+}
+#mainContent.publication table#pamphlet td {
+	text-align:center;
+	color:#666;
+	font-size:12px;
+}
+#mainContent.publication table#pamphlet tr#thum td {
+	padding:12px 12px 4px;
+	border-bottom:0;
+}
+#mainContent.publication table#pamphlet tr#thum a {
+	background-color:#fff;
+}
+#mainContent.publication table#pamphlet tr#thum a:hover img {
+	filter:alpha(opacity=70);
+	-moz-opacity: 0.7;
+	opacity: 0.7;
+}
+#mainContent.publication table#pamphlet tr#fileSize td {
+	border-top:0;
+	padding: 0 0 12px 0;
+}
+#mainContent.publication #dojima_ss {
+	border:1px solid #5073b8;
+	margin:12px 0;
+	padding:6px;
+}
+#mainContent.publication #dojima_ss #left {
+	float:left;
+	font-size:12px;
+	text-align:center;
+	border-right:1px dotted #5073b8;
+	display:block;
+	padding-bottom:6px;
+}
+#mainContent.publication #dojima_ss img {
+	clear:both;
+	margin:8px 6px 2px 6px;
+	width:150px;
+}
+#mainContent.publication #dojima_ss p {
+	display:table;
+	padding: 12px;
+}
+#mainContent.publication #dojima_ss a {
+	background-color:#fff;
+	margin:12px 0 6px 0;
+}
+#mainContent.publication #dojima_ss a:hover img {
+	filter:alpha(opacity=70);
+	-moz-opacity: 0.7;
+	opacity: 0.7;
+}
+
+/* ページ「DOJIMA ショートショート」 */
+#mainContent.dojima_ss ul {
+	margin:12px 20px;
+	padding-bottom:12px;
+	border-bottom:1px solid #5073b8;
+}
+#mainContent.dojima_ss li {
+	line-height:20px;
+}
+/* ページ「イベント情報」 */
+#mainContent.event ul.calendar li {
+	margin:10px 0 10px 30px;
+	background-image: url(../images/icon_calendar_20.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	line-height:20px;
+	padding-left:26px;
+}
+/* ページ「コメ先物市場試験事業のご提案」 */
+#mainContent.teian ul.number {
+	margin:12px;
+}
+#mainContent.teian ul.number li {
+	list-style-type:decimal;
+	margin-left:24px;
+	padding: 3px 0;
+	line-height:18px;
+}
+#mainContent.teian ul.number li span {
+	padding-left:32px;
+}
+
+/* ページ「コメ関連リンク集」 */
+#mainContent.komeLinkIndex .indexPart table {
+	margin:12px 0;
+}
+#mainContent.komeLinkIndex .indexPart th, 
+#mainContent.komeLinkIndex .indexPart td {
+	border:1px solid #5073b8;
+	padding:6px 8px;
+}
+#mainContent.komeLinkIndex .indexPart th {
+	background-color:#5073b8;
+	color:#fff;
+	font-weight:bold;
+	letter-spacing:0.1em;
+}
+#mainContent.komeLinkIndex .indexPart td.url {
+	width: 400px;
+}
+#mainContent.komeLinkIndex .indexPart td.url a {
+	padding:9px 6px 9px 42px;
+	background-image: url(../images/icon_url_30.png);
+	background-repeat: no-repeat;
+	background-position: 6px center;
+	display:block;
+}
+
+/*	ページ「関連ページ」*/
+#mainContent.basicLinks table {
+	width:100%;
+	margin-bottom:20px;
+}
+#mainContent.basicLinks table th ,
+#mainContent.basicLinks table td {
+	border:1px solid #5073b8;
+	padding:6px 8px 4px;
+}
+#mainContent.basicLinks table th {
+	background-color:#F0F3FF;
+}
+
+/* ページ「BEI＆IFIJ 過去レポート」 */
+#mainContent.bei_ifij_report table {
+	width:100%;
+	margin:12px 0;
+}
+#mainContent.bei_ifij_report table td {
+	padding:2px 8px;
+}
+#mainContent.bei_ifij_report table tr.firstChild td {
+	padding-bottom:12px;
+}
+#mainContent.bei_ifij_report a#beiMonthly {
+	display:compact;
+	padding:4px 8px;
+	background-color:#5073b8;
+	color:#fff;
+	width:260px;
+	text-align:center;
+}
+#mainContent.bei_ifij_report a#beiMonthly:hover {
+	background-color:#F0F3FF;
+	color:#1e2b62;
+}
+
+/* ページ「BEI 過去レポート」 */
+#mainContent.oldBei ul#yearthly {
+	margin-bottom:20px;
+}
+#mainContent.oldBei ul#yearthly li {
+	padding:4px 8px 3px;
+}
+#mainContent.oldBei #monthly {
+	margin-bottom:12px;
+}
+#mainContent.oldBei #monthly td {
+	padding:3px 0 3px 6px;
+}
+#mainContent.oldBei #monthly td.year {
+	padding:8px 0 5px 0;
+	border-bottom:1px solid #5073b8;
+	width:236px;
+}
+#mainContent.oldBei #monthly td.blank {
+	width:26px;
+}
+
+/* ページ「セミナー」 */
+#mainContent table#seminar2 {
+	margin: 12px auto;
+}
+#mainContent table#seminar2 td{
+	border: 1px solid #809ada;
+	padding: 5px 5px;
+	line-height:16px;
+}
+#mainContent table#seminar2 .hyoCol1 td {
+	background-color: #5073b8;
+	color: #fff;
+	font-weight: bold;
+	padding: 6px 12px;
+}
+#mainContent table#seminar2 .hyoCol2 td {
+	background-color: #e0e6ff;
+}
+
+
+/* ページ「動画」 */
+#mainContent.movie table#seminar {
+	width:100%;
+	margin:12px 0;
+}
+#mainContent.movie table#seminar th {
+	background-color:#5073b8;
+	color:#fff;
+	padding:4px 12px;
+	font-weight:bold;
+	border: 1px solid #B0C4F9;
+}
+#mainContent.movie table#seminar td {
+	border: 1px solid #B0C4F9;
+	padding:4px 8px;
+	text-align:center;
+}#mainContent.movie table#seminar td.detail {
+	background-color:#F0F3FF;
+	padding-bottom:10px;
+	text-align:left;
+}
+#mainContent.movie table#seminar td.pdf {
+	width:100px;
+}
+
+#mainContent.movie table#seminar td.movie {
+	width:150px;
+}
+#mainContent.movie table#seminar td.detail ul li {
+	padding-left:24px;
+}
+#mainContent.movie table#seminar td.detail ul li.index {
+	padding: 6px 0 0 8px;
+}
+#mainContent.movie table#seminar td.detail ul li.title {
+	font-weight:bold;
+	color:#1e2b62;
+}
+#mainContent.movie table#seminar td.detail span {
+	font-size:12px;
+}
+#mainContent.movie table#seminar td.movie {
+	vertical-align:middle;
+}
+#mainContent.movie table#seminar td.movie a {
+	display:block;
+	padding-top:5px;
+	position:relative;
+}
+#mainContent.movie table#seminar td.movie a:hover {
+	background-color:#fff;
+}
+#mainContent.movie table#seminar td.movie a img.scrShot {
+	z-index: 0;
+	width:120px;
+	height:90px;
+}
+#mainContent.movie table#seminar td.movie a img.playBtn {
+	position:absolute;
+	top:35px;
+	left:56px;
+	z-index: 5;
+	filter:alpha(opacity=60);
+	-moz-opacity: 0.6;
+	opacity: 0.6;
+	display:inline;
+}
+#mainContent.movie table#seminar td.movie a:hover img.playBtn {
+	filter:alpha(opacity=90);
+	-moz-opacity: 0.9;
+	opacity: 0.9;
+}

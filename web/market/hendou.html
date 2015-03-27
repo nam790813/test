@@ -1,0 +1,162 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS" />
+	<title>大阪堂島商品取引所</title>
+	<meta name="description" content="先物取引"/>
+	<meta name="keyword" content="商品先物取引","大阪堂島","コメ先物取引">
+	<script type="text/javascript" src="../js/common2.js"></script>
+	<script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="../js/thickbox.js"></script>
+	<script type="text/javascript" src="../js/stripe.js" charset="utf-8"></script>
+	<script src="../js/switch.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="../css/common.css" type="text/css">
+	<!-- 追加する script・css は以下に配置 -->
+	<link rel="stylesheet" href="../css/market.css" type="text/css">
+	
+	<!-- 追加する script・css は以上に配置 -->
+</head>
+<body>
+
+	<div id="wrapper">
+		<a name="pageTop"></a>
+		<!-- ヘッダ start -->
+		<div id="header">
+			<p id="noJS">お使いのブラウザは、JavaScriptに対応していません。</p>
+			<!-- ヘッダーの共有化の為、JS(common.js)にてHTMLを生成 -->
+		</div>
+		<!-- ヘッダ end -->
+		
+		<!-- メインコンテンツ start -->
+		<div id="contents">
+			<div id="sideBanner">
+				<!-- サイドバナーの共有化の為、JS(common.js)にてHTMLを生成 -->	
+			</div>
+			<div id="mainContent" class="hendou">
+				<ul id="crumbs">
+					<li><a href="../index.html">HOME</a></li><li class="category">相場情報</li><li class="secPage">価格変動要因</li>
+				</ul>
+				
+				<ul id="itemLink">
+					<li id="btn_item1" class="select"><a onClick="onSwitchItem7(item1)"><img src="../images/nameCent_rice_110.gif"><img src="../images/rice_110_02.jpg"></a></li>
+					<li id="btn_item2"><a onClick="onSwitchItem7(item2)"><img src="../images/nameCent_corn_110.gif"><img src="../images/corn_110_03.jpg"></a></li>
+					<li id="btn_item3"><a onClick="onSwitchItem7(item3)"><img src="../images/nameCent_soy_110.gif"><img src="../images/soy_110_01.jpg"></a></li>
+					<li id="btn_item4"><a onClick="onSwitchItem7(item4)"><img src="../images/nameCent_azuki_110.gif"><img src="../images/azuki_110_01.jpg"></a></li>
+					<li id="btn_item5"><a onClick="onSwitchItem7(item5)"><img src="../images/nameCent_corn75_110.gif"><img src="../images/corn75_110_02.jpg"></a></li>
+					<li id="btn_item6"><a onClick="onSwitchItem7(item6)"><img src="../images/nameCent_shrimp_110.gif"><img src="../images/shrimp_110_01.jpg"></a></li>
+					<li id="btn_item7"><a onClick="onSwitchItem7(item7)"><img src="../images/nameCent_suger_110.gif"><img src="../images/suger_110_01.jpg"></a></li>
+				</ul>
+				
+				
+				
+				<!-- ここから　コメ -->
+				<div id="item1" class="indexPart" style="display:;">
+					<h1><img src="../images/subtitle_rice.gif"></h1>
+					<img class="cause" src="images/cause_rice.jpg">
+					<div class="unit">
+						<p>コメの価格変動要因は、主に天候相場期（作付けから収穫までの期間）と需要相場期（収穫後から翌年の作付けが始まるまでの期間）の２期に分かれますが、他の穀物相場と異なり、 １等米比率等の検査が一年を通して行われ、また、政府備蓄米の買入が２月から６月頃にまたがっている等様々な要因が複合的に影響しています。</p>
+					</div>
+					<div class="unit"><a class="gotoTop" href="#pageTop">ページの先頭へ戻る</a></div>
+				</div>
+				<!-- ここまで　コメ -->
+				
+				<!-- ここから　とうもろこし -->
+				<div id="item2" class="indexPart" style="display:none;">
+					<h1><img src="../images/subtitle_corn.gif"></h1>
+					<img class="cause" src="images/cause_corn.jpg">
+					<div class="unit">
+						<p>日本は世界NO.１のともろこし輸入国。その約９０％は米国産に依存していることから、シカゴ市場価格をベースに為替動向を介した動きとなります。<br>
+						総輸入量の約７５％が飼料用として使われていますが、その他にガソリンに混入するエタノール用の原料としても利用され今後の需要増加が予測されています。<br>
+						また、「米国産とうもろこし」はその年の作付け期から収穫期の間の気象状況が大きな要因となります。また、毎月発表される米国農務省の統計情報、生産国であり輸出国でもある中国の動向や米国と反対の時期に生育期となるアルゼンチン等の南半球の生産動向が価格変動に大きく影響を与えることから神経質な展開が予想されます。</p>
+					</div>
+					<div class="unit"><a class="gotoTop" href="#pageTop">ページの先頭へ戻る</a></div>
+				</div>
+				<!-- ここまで　とうもろこし -->
+				
+				<!-- ここから　米国産大豆 -->
+				<div id="item3" class="indexPart" style="display:none;">
+					<h1><img src="../images/subtitle_soy.gif"></h1>
+					<img class="cause" src="images/cause_soy.jpg">
+					<div class="unit">
+						<p>大豆の価格は、天候相場期（作付けから収穫までの期間）と、需給相場期（収穫後翌年の作付けが始まるまでの期間）で、変動要因が変化します。<br>
+						天候相場期では、生産地の天候（気温、日照時間、降水量）や生産動向（作付面積、作況等）が価格変動に大きく影響します。<br>
+						需給相場期では、天候相場期ほどの値動きはありませんが、各国の輸出、輸入量や景気動向などが相場に影響を与えることもあります。<br>
+						また、大豆も他の国際商品同様、為替レートの変動が価格変動に影響を与えます。</p>
+					</div>
+					<div class="unit"><a class="gotoTop" href="#pageTop">ページの先頭へ戻る</a></div>
+				</div>
+				<!-- ここまで　米国産大豆 -->
+				
+				<!-- ここから　小豆 -->
+				<div id="item4" class="indexPart" style="display:none;">
+					<h1><img src="../images/subtitle_azuki.gif"></h1>
+					<img class="cause" src="images/cause_azuki.jpg">
+					<div class="unit">
+						<p>小豆相場も他の穀物同様、天候相場期（作付けから収穫までの期間）と需給相場期（収穫後翌年の作付けが始まるまでの期間）によって、変動要因が変化します。<br>
+						天候相場期では、生産地（主に北海道十勝地方）の日照時間、気温等が大きな影響を与えると考えられていましたが、近年では品種改良が進み、以前ほど天候の影響を受けなくなってきています。<br>
+						需給相場期では、関税割当制度により中国からの輸入量が制限されるため、その輸入数量の増減が相場に影響を与えることもあります。</p>
+					</div>
+					<div class="unit"><a class="gotoTop" href="#pageTop">ページの先頭へ戻る</a></div>
+				</div>
+				<!-- ここまで　小豆 -->
+				
+				<!-- ここから　コーン75指数 -->
+				<div id="item5" class="indexPart" style="display:none;">
+					<h1><img src="../images/subtitle_corn75.gif"></h1>
+					<h2>（国際穀物等指数）</h2>
+					<img class="cause" src="images/cause_corn75.jpg">
+					<div class="unit">
+						<p>コーン75指数はとうもろこし75％と大豆油かす25%で構成された指数であるため、当然ながらとうもろこしの価格変動と密接な関係にあります。<br>
+						日本のとうもろこしはほとんどが輸入に依存しており、そのうち約8割は米国産です。そのため、米国におけるとうもろこしの生産動向（作付面積、天候異変）や、米農務省（USDA）が発表する生産や需給の見通し、期末在庫も価格変動に大きく影響を与えます。<br>
+						また、とうもろこしの消費のほとんどが家畜飼料用として使用されることから、他の飼料用穀物との競合や畜産物の価格動向なども価格変動に影響を与えると考えられています。</p>
+					</div>
+					<div class="unit"><a class="gotoTop" href="#pageTop">ページの先頭へ戻る</a></div>
+				</div>
+				<!-- ここまで　コーン75指数 -->
+				
+				<!-- ここから　冷凍えび -->
+				<div id="item6" class="indexPart" style="display:none;">
+					<h1><img src="../images/subtitle_shrimp.gif"></h1>
+					<img class="cause" src="images/cause_shrimp.jpg">
+					<div class="unit">
+						<p>冷凍えびの価格形成として、輸入価格と国内価格の2つのパターンがあります。<br>
+						輸入価格ではインドネシア、インド、タイ、ベトナム等の生産国における生産状況（天候異変、環境要因、病気の発生）、生産国内の自国消費量、あるいは政情の変化、また、他の消費国（主に米国）の景気動向などが影響しています。<br>
+						国内価格では、国内景気はもとより、消費の季節性（行楽、盆暮等の需要増加）、他の食材との競合なども影響を与えると考えられています。<br>
+						また、流通するまでの時間差により為替レートの変動が大きく影響することもあります。</p>
+					</div>					
+					<div class="unit"><a class="gotoTop" href="#pageTop">ページの先頭へ戻る</a></div>
+				</div>
+				<!-- ここまで　冷凍えび -->
+				
+				<!-- ここから　粗糖 -->
+				<div id="item7" class="indexPart" style="display:none;">
+					<h1><img src="../images/subtitle_suger.gif"></h1>
+					<img class="cause" src="images/cause_suger.jpg">
+					<div class="unit">
+						<p>砂糖産地は全世界に散らばっていることから、穀物の天候相場のように夏だけ天候に敏感になるということはありませんが、天候は生産に影響を与えるので、大生産国（キューバ、ブラジル、タイ等）の天候異変は価格に影響を与えると考えられます。<br>
+						また長期的相場観は需給予測を基本としますが、砂糖の生産国は発展途上国が多いので、需給統計が把握しにくいと言われています。世界の需給については米農務省、F.O.リヒト社、ザーニコフ社などが年数回推定値を発表していますが、前述の理由で各機関の統計にズレが見られ、発表内容が全く違うものになっていることがあるので、注意しておく必要があります。</p>
+					</div>
+					<div class="unit"><a class="gotoTop" href="#pageTop">ページの先頭へ戻る</a></div>
+				</div>
+				<!-- ここまで　粗糖 -->
+				
+			</div>
+		</div>
+		<!-- メインコンテンツ end -->
+		
+		<!-- フッター start -->
+		<div id="footer">
+			<!-- フッターの共有化の為、JS(common.js)にてHTMLを生成 -->
+		</div>
+		<!-- フッター end -->
+		
+	</div>
+	<script type="text/javascript" language="JavaScript">
+	<!--
+	homeHeader();
+	-->
+	</script>
+</body>
+
+</html>
